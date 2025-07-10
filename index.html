@@ -3,50 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LimePea Bot</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  
-  
+  <title>LimePea</title>
+
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 2rem;
+      margin: 0;
       background-color: #1e1e2f;
       color: #e0e0e0;
       line-height: 1.6;
     }
-    a {
+    header {
+      background-color: #111827;
+      padding: 1rem 2rem;
+    }
+    header h1 {
+      color: #00ffc3;
+      margin: 0;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      margin-right: 1.5rem;
       color: #76c7ff;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
-    h1, h2 {
-      color: #00ffc3;
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 2rem;
     }
-    h1 {
+    h2 {
+      color: #00ffc3;
       border-bottom: 2px solid #00ffc3;
-      padding-bottom: 0.4rem;
+      padding-bottom: 0.3rem;
     }
     h3 {
       color: #b5f4ec;
     }
     ul {
-      margin-left: 1.2rem;
+      margin-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
     }
     section {
       margin-bottom: 3rem;
     }
-    p, li {
-      max-width: 800px;
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+      background-color: #111827;
     }
   </style>
 
-
 </head>
 <body>
-
+  <header>
+    <h1>LimePea Bot 🍋</h1>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="help.html">📖 Help</a>
+      <a href="download.html">⬇️ Download</a>
+    </nav>
+  </header>
+  <main>
 <div style="background:#1e1e1e;padding:1rem 2rem;display:flex;gap:2rem;font-weight:600;">
   <a href="index.html" style="color:#8fff8f;text-decoration:none;">🏠 Home</a>
   <a href="help.html" style="color:#8fff8f;text-decoration:none;">📘 Help</a>
@@ -80,5 +108,9 @@
       LimePea Bot © 2025 — Built with 💚 for community servers everywhere
     </footer>
   </div>
+  </main>
+  <footer>
+    LimePea Discord Bot • Built with 💚 • © 2025 LimePea Dev Team
+  </footer>
 </body>
 </html>
