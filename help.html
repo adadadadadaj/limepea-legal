@@ -4,153 +4,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LimePea Help & Commands</title>
+  <title>LimePea Help & Docs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 2rem;
-      background-color: #1e1e2f;
-      color: #e0e0e0;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #00ffc3;
-    }
-    h3 {
-      color: #b5f4ec;
-    }
-    code {
-      background-color: #2c2c3c;
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-family: monospace;
-      color: #aefcd5;
-    }
-    ul {
-      margin-left: 1.5rem;
-    }
-    li {
-      margin-bottom: 0.4rem;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    .nav {
-      margin-bottom: 2rem;
-    }
-    .nav a {
-      margin-right: 1rem;
-      color: #76c7ff;
-      text-decoration: none;
-    }
-    .nav a:hover {
-      text-decoration: underline;
-    }
-    .footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      text-align: center;
-      color: #888;
-    }
+    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #0f0f0f; color: #f1f1f1; padding: 2rem; }
+    .container { max-width: 800px; margin: auto; background: #1a1a1a; padding: 2rem 3rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); }
+    h1 { font-size: 2rem; margin-bottom: 0.25rem; color: #8fff8f; }
+    p.subtitle { color: #bbb; margin-bottom: 2rem; }
+    h2 { margin-top: 2rem; color: #9aff87; }
+    code { background: #2d2d2d; color: #d0f6c0; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.95rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.5rem; }
+    section { margin-top: 3rem; }
+    footer { margin-top: 4rem; font-size: 0.9rem; text-align: center; color: #666; }
+    a { color: #a3ffa3; text-decoration: underline; }
   </style>
 </head>
 <body>
 
-  <div class="nav">
-    <a href="index.html">🏠 Home</a>
-    <a href="help.html">📖 Help</a>
-    <a href="policies.html">🔐 Policies</a>
-  </div>
+<div style="background:#1e1e1e;padding:1rem 2rem;display:flex;gap:2rem;font-weight:600;">
+  <a href="index.html" style="color:#8fff8f;text-decoration:none;">🏠 Home</a>
+  <a href="help.html" style="color:#8fff8f;text-decoration:none;">📘 Help</a>
+  <a href="policy.html" style="color:#8fff8f;text-decoration:none;">📄 Policies</a>
+  <a href="download.html" style="color:#8fff8f;text-decoration:none;">💾 Invite</a>
+</div>
 
-  <h1>LimePea Help Menu 🍋</h1>
-  <p>Here's a complete list of commands and features you can use with the LimePea bot.</p>
+  <div class="container">
+    <h1>LimePea Help Menu</h1>
+    <p class="subtitle">Here’s a full list of available commands and features you can use with the LimePea Discord bot.</p>
 
-  <section>
-    <h2>📋 General</h2>
+    <h2>🎮 General Commands</h2>
     <ul>
-      <li><code>/help</code> — View this help page.</li>
+      <li><code>/help</code> — Shows this help page.</li>
       <li><code>/balance [user]</code> — View your or another user's lime balance.</li>
       <li><code>/give [user] [amount]</code> — Give your limes to another user.</li>
-      <li><code>/toplimes</code> — See the top lime hoarders.</li>
-      <li><code>/daily</code> — Claim your daily lime reward (includes streak bonus).</li>
+      <li><code>/toplimes</code> — View the top 10 lime hoarders.</li>
+      <li><code>/daily</code> — Claim your daily lime reward with streak bonus.</li>
+      <li><code>/gamble</code> — Gamble your lime savings away.</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>🎫 Tickets</h2>
+    <h2>🔨 Auction Commands </h2>
+    <ul>
+      <li><code>/auction_start</code> — Start an auction.</li>
+      <li><code>/auction_bid</code> — Bid on an auction.</li>
+      <li><code>/auction_end</code> — (Admin)End the current auction.</li>
+      <li><code>/auction_status</code> — Check the current auctions status.</li>
+    </ul>
+    
+    <h2>🔧 Admin & Setup</h2>
+    <ul>
+      <li><code>/reactionrole_setup</code> — Setup a reaction role on a specific message.</li>
+      <li><code>/reactionrole_remove</code> — Remove a specific reaction role.</li>
+      <li><code>/autorole_add</code> — Automatically assign roles when members join.</li>
+      <li><code>/level_toggle</code> — Enable or disable level tracking in your server.</li>
+    </ul>
+
+    <h2>📊 Leveling & XP</h2>
+    <ul>
+      <li><code>/rank</code> — See your current level and XP progress.</li>
+      <li><code>/leaderboard</code> — Show the top XP earners in the server.</li>
+      <li><code>/set_level [user] [level]</code> — (Admin) Manually set a user's level.</li>
+    </ul>
+
+    <h2>🎫 Ticket System</h2>
     <ul>
       <li><code>/ticket_setup</code> — Create a ticket panel.</li>
       <li><code>/close</code> — Close the current ticket.</li>
       <li><code>/add [user]</code> / <code>/remove [user]</code> — Manage members in tickets.</li>
     </ul>
-  </section>
-
-  <section>
-    <h2>🧩 Roles & Welcome</h2>
-    <ul>
-      <li><code>/reactionrole_setup</code> — Setup a reaction role message.</li>
-      <li><code>/reactionrole_remove</code> — Remove a reaction role configuration.</li>
-      <li><code>/autorole_add</code> — Add a role to assign on member join.</li>
-      <li><code>/level_toggle</code> — Toggle leveling on or off.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>📊 Leveling</h2>
-    <ul>
-      <li><code>/rank</code> — Check your level and XP.</li>
-      <li><code>/leaderboard</code> — Show top XP earners.</li>
-      <li><code>/set_level [user] [level]</code> — Set a user’s level manually.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>💸 Items & Coins</h2>
-    <ul>
-      <li><code>/gamble [amount]</code> — Gamble your limes (10m cooldown).</li>
-      <li><code>/beg</code> — Beg for a few coins.</li>
-      <li><code>/adventure</code> — Go on an adventure to find limes (1h cooldown).</li>
-      <li><code>/flip</code> — Flip a coin and bet on heads/tails.</li>
-      <li><code>/slots</code> — Play a slot machine for limes.</li>
-      <li><code>/inventory</code> — View your collected items.</li>
-      <li><code>/use [item]</code> — Use an item from your inventory.</li>
-      <li><code>/useall [item]</code> — Use all of an item in your inventory.</li>
-      <li><code>/shop</code> — View and buy from the item shop.</li>
-      <li><code>/trade [user] [item]</code> — Trade an item with another user.</li>
-      <li><code>/gift [user] [item]</code> — Gift an item to another user.</li>
-      <li><code>/buffs</code> — Check your active buffs.</li>
-      <li><code>/profile</code> — View your profile, balance, inventory & level.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🎮 Games</h2>
-    <ul>
-      <li><code>/tictactoe [user]</code> — Challenge someone to a Tic Tac Toe game.</li>
-      <li><code>/ttt_resign</code> — Resign from a current game.</li>
-      <li><code>/fortune</code> — Get a random fortune.</li>
-      <li><code>/limefact</code> — Receive a lime-themed fun fact.</li>
-      <li><code>/roll [sides]</code> — Roll a dice with custom sides.</li>
-      <li><code>/rate [thing]</code> — Get a random rating for anything.</li>
-      <li><code>/8ball [question]</code> — Ask the magic 8-ball a yes/no question.</li>
-      <li><code>/battle [user]</code> — Battle another user and see who wins.</li>
-    </ul>
-  </section>
-
-  <section>
+    
     <h2>⚠️ Moderation</h2>
     <ul>
-      <li><code>/ban [user]</code> — Ban a member.</li>
-      <li><code>/kick [user]</code> — Kick a member.</li>
-      <li><code>/timeout [user]</code> — Temporarily mute a member.</li>
+      <li><code>/ban [user]</code> / <code>/kick [user]</code> / <code>/timeout</code> — Core moderation tools.</li>
       <li><code>/warn [user]</code> — Issue a warning to a member.</li>
     </ul>
-  </section>
 
-  <div class="footer">
-    LimePea Discord Bot • Built with 💚 • © 2025 LimePea Dev Team
+    <h2>⭕ Tic Tac Toe</h2>
+    <ul>
+      <li><code>/tictactoe [user]</code> — Challenge someone to a game of Tic Tac Toe.</li>
+      <li><code>/ttt_resign</code> — Resign from a current game.</li>
+    </ul>
+
+    <h2>🧠 Games & Fun</h2>
+    <ul>
+      <li><code>/fortune</code> — Receive a random fortune message. 🍀</li>
+      <li><code>/roll [sides]</code> — Roll a dice with any number of sides.</li>
+      <li><code>/limefact</code> — Get a fun lime-related fact.</li>
+      <li><code>/rate [thing]</code> — Get a random rating for anything.</li>
+      <li><code>/battle [user]</code> — Battle another user and see who wins.</li>
+      <li><code>/8ball [question]</code> — Ask a yes/no question and get a mystical response.</li>
+    </ul>
+
+    <footer>
+      LimePea Discord Bot • Built with 💚<br/>
+      © 2025 LimePea Dev Team
+    
+<div style="text-align: center; margin-top: 3rem;">
+  <a href="index.html" style="
+    display: inline-block;
+    background: #2e2e2e;
+    color: #a3ffa3;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  ">⬅️ Return to Home</a>
+</div>
+
+</footer>
   </div>
-
-<a class="button" href="https://discord.com/oauth2/authorize?client_id=1390809179249184919&permissions=8&integration_type=0&scope=bot" target="_blank">🤖 Invite LimePea to Your Server</a>
 </body>
 </html>

@@ -1,77 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LimePea Bot - Home</title>
+  <title>LimePea Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 2rem;
-      background-color: #1e1e2f;
-      color: #e0e0e0;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #00ffc3;
-    }
-    .nav a {
-      margin-right: 1rem;
-      color: #76c7ff;
-      text-decoration: none;
-    }
-    .nav a:hover {
-      text-decoration: underline;
-    }
-    .nav {
-      margin-bottom: 2rem;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .button {
-      display: inline-block;
-      background: #00ffc3;
-      color: #000;
-      padding: 0.6rem 1.2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 1rem;
-    }
-    .footer {
-      margin-top: 4rem;
-      text-align: center;
-      color: #888;
-    }
+    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #0f0f0f; color: #f1f1f1; padding: 2rem; }
+    .container { max-width: 800px; margin: auto; background: #1a1a1a; padding: 3rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); text-align: center; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #8fff8f; }
+    p { color: #ccc; font-size: 1.1rem; line-height: 1.6; }
+    .button-row { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1rem; }
+    a.button { display: block; background: #2e2e2e; color: #a3ffa3; text-decoration: none; padding: 0.9rem 1.2rem; border-radius: 8px; font-weight: 600; transition: background 0.3s; }
+    a.button:hover { background: #3c3c3c; }
+    footer { margin-top: 3rem; font-size: 0.85rem; color: #666; }
   </style>
 </head>
 <body>
-  <div class="nav">
-    <a href="index.html">🏠 Home</a>
-<a class="button" href="https://discord.com/oauth2/authorize?client_id=1390809179249184919&permissions=8&integration_type=0&scope=bot" target="_blank">🤖 Invite LimePea to Your Server</a>
-    <a href="help.html">📖 Help</a>
-    <a href="policies.html">🔐 Policies</a>
-  </div>
 
-  <h1>Welcome to LimePea Bot 🍋</h1>
-  <p>LimePea is your all-in-one Discord bot for moderation, leveling, reaction roles, games, limes and more.</p>
+<div style="background:#1e1e1e;padding:1rem 2rem;display:flex;gap:2rem;font-weight:600;">
+  <a href="index.html" style="color:#8fff8f;text-decoration:none;">🏠 Home</a>
+  <a href="help.html" style="color:#8fff8f;text-decoration:none;">📘 Help</a>
+  <a href="policy.html" style="color:#8fff8f;text-decoration:none;">📄 Policies</a>
+  <a href="download.html" style="color:#8fff8f;text-decoration:none;">💾 Invite</a>
+</div>
 
-  <div class="section">
-    <h2>✨ Features</h2>
-    <ul>
-      <li>🎫 Ticket system with add/remove and close</li>
-      <li>🧩 Reaction Roles and Auto Roles</li>
-      <li>📊 XP system with leaderboards</li>
-      <li>🎮 Games like Tic Tac Toe, Slots, Coinflip, Fortune</li>
-      <li>💸 Item shop, gamble system, and economy tools</li>
-    </ul>
-    <a class="button" href="help.html">📖 View Commands</a>
-  </div>
-
-  <div class="footer">
-    LimePea Discord Bot • Built with 💚 • © 2025 LimePea Dev Team
+  <div class="container">
+    <h1>LimePea</h1>
+    <p>
+      LimePea is a multipurpose Discord bot built for simplicity and power.<br/>
+      With features like:
+      <ul style="text-align: left; max-width: 600px; margin: 1rem auto; line-height: 1.8;">
+        <li>✅ Reaction Roles and Auto Roles</li>
+        <li>🎉 Welcome Messages & Embed Setup</li>
+        <li>📊 Leveling and XP Leaderboards</li>
+        <li>🎫 Ticket System with Slash Commands</li>
+        <li>🧠 Games like Tic Tac Toe and Fortune</li>
+        <li>🛠️ Moderation tools like Ban, Kick, Timeout</li>
+      </ul>
+      Whether you're building a cozy community or a powerful mod hub, LimePea does it all.
+    </p> It handles:<br/>
+      <strong>Reaction Roles, Welcome Messages, Leveling, Tickets, Embeds, Moderation, and Games</strong> — all in one clean package.
+    </p>
+    <div class="button-row">
+      <a href="help.html" class="button">📘 View Command Help</a>
+      <a href="policy.html" class="button">📄 Terms & Privacy Policy</a>
+      <a href="download.html" class="button">💾 Add LimePea to Your Server</a>
+    </div>
+    <footer>
+      LimePea Bot © 2025 — Built with 💚 for community servers everywhere
+    </footer>
   </div>
 </body>
 </html>
