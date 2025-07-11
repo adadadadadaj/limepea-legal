@@ -1,17 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - LimePea Bot</title>
+  <title>Contact - LimePea</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    html, body {
+      height: 100%;
       margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #1e1e2f;
       color: #e0e0e0;
-      line-height: 1.6;
     }
     header {
       background-color: #111827;
@@ -25,7 +29,6 @@
       margin-top: 0.5rem;
       text-align: center;
     }
-
     nav a {
       display: inline-block;
       margin: 0 0.75rem;
@@ -37,22 +40,18 @@
       text-decoration: underline;
     }
     main {
+      flex: 1;
       max-width: 900px;
       margin: 2rem auto;
       padding: 0 2rem;
+      text-align: center;
     }
-    h2 {
-      color: #00ffc3;
-      border-bottom: 2px solid #00ffc3;
-      padding-bottom: 0.3rem;
-    }
-    p {
-      font-size: 1.1rem;
-    }
-    .email-link {
-      color: #76c7ff;
-      text-decoration: underline;
-      font-weight: bold;
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #888;
+      font-size: 0.9rem;
+      background-color: #111827;
     }
   </style>
 </head>
@@ -69,10 +68,14 @@
       <a href="changelog.html">📌 Changelog</a>
     </nav>
   </header>
+
   <main>
     <h2>Contact the LimePea Team</h2>
-    <p>If you need help, found a bug, or have a feature suggestion, feel free to contact us!</p>
-    <p>📧 Email us at: <a class="email-link" href="mailto:LimePea@hotmail.com">LimePea@hotmail.com</a></p>
+    <p>For support, suggestions, or business inquiries, please contact us via the official <a href="https://discord.com/invite/MRgvge5tFp" target="_blank" style="color: #76c7ff;">Discord server</a> or on GitHub.</p>
   </main>
+
+  <footer>
+    LimePea Discord Bot • Built with 💚 • © 2025 LimePea Dev Team
+  </footer>
 </body>
 </html>
