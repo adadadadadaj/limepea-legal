@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LimePea</title>
+  <title>LimePea - Download</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    html, body {
+      height: 100%;
       margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #1e1e2f;
       color: #e0e0e0;
-      line-height: 1.6;
     }
     header {
       background-color: #111827;
@@ -24,7 +29,6 @@
       margin-top: 0.5rem;
       text-align: center;
     }
-
     nav a {
       display: inline-block;
       margin: 0 0.75rem;
@@ -36,52 +40,18 @@
       text-decoration: underline;
     }
     main {
+      flex: 1;
       max-width: 900px;
       margin: 2rem auto;
       padding: 0 2rem;
-    }
-    h2 {
-      color: #00ffc3;
-      border-bottom: 2px solid #00ffc3;
-      padding-bottom: 0.3rem;
-    }
-    h3 {
-      color: #b5f4ec;
-    }
-    ul {
-      margin-left: 1.5rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    section {
-      margin-bottom: 3rem;
+      text-align: center;
     }
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 1rem;
       color: #888;
       font-size: 0.9rem;
       background-color: #111827;
-    }
-    .invite-button {
-      display: inline-block;
-      background-color: #00ffc3;
-      color: #1e1e2f;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      margin-top: 1rem;
-      transition: background 0.2s ease-in-out;
-    }
-    .invite-button:hover {
-      background-color: #76c7ff;
-      color: #000;
-    }
-    .center-wrapper {
-      text-align: center;
-      margin-top: 2rem;
     }
   </style>
 </head>
@@ -93,6 +63,7 @@
       <a href="index.html">🏠 Home</a>
       <a href="help.html">📖 Help</a>
       <a href="download.html">⬇️ Download</a>
+      <a href="support.html">💬 Support Server</a>
       <a href="policy.html">🔐 Policy</a>
       <a href="contact.html">📧 Contact</a>
       <a href="changelog.html">📌 Changelog</a>
@@ -106,7 +77,9 @@
       </a>
     </div>
   </main>
-
+  <footer>
+    LimePea Discord Bot • Built with 💚 • © 2025 LimePea Dev Team
+  </footer>
 </body>
 </html>
 
