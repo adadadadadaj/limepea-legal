@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Official Support Server - LimePea</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #1e1e2f;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #111827;
+      padding: 1rem 2rem;
+    }
+    header h1 {
+      color: #00ffc3;
+      margin: 0;
+    }
+    nav {
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0 0.75rem;
+      color: #76c7ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .center-wrapper {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .invite-button {
+      display: inline-block;
+      background-color: #00ffc3;
+      color: #1e1e2f;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      transition: background 0.2s ease-in-out;
+    }
+    .invite-button:hover {
+      background-color: #76c7ff;
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+      background-color: #111827;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LimePea Bot</h1>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="help.html">📖 Help</a>
+      <a href="download.html">⬇️ Download</a>
+      <a href="support.html">💬 Support Server</a>
+      <a href="policy.html">🔐 Policy</a>
+      <a href="contact.html">📧 Contact</a>
+      <a href="changelog.html">📌 Changelog</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="center-wrapper">
+      <h2>Join the Official Support Server</h2>
+      <p>Need help with LimePea or want to report a bug? Come chat with us!</p>
+      <a class="invite-button" href="https://discord.com/invite/MRgvge5tFp" target="_blank">
+        💬 Join Support Server
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    LimePea Discord Bot • Built with 💚 • © 2025 LimePea Dev Team
+  </footer>
+</body>
+</html>
