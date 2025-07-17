@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LimePea</title>
-
+  <title>LimePea Help</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,11 +20,10 @@
       color: #00ffc3;
       margin: 0;
     }
-     nav {
+    nav {
       margin-top: 0.5rem;
       text-align: center;
     }
-
     nav a {
       display: inline-block;
       margin: 0 0.75rem;
@@ -55,6 +53,12 @@
     li {
       margin-bottom: 0.5rem;
     }
+    code {
+      background: #2a2a3d;
+      padding: 2px 4px;
+      border-radius: 4px;
+      color: #00ffc3;
+    }
     section {
       margin-bottom: 3rem;
     }
@@ -66,136 +70,114 @@
       background-color: #111827;
     }
   </style>
-
 </head>
 <body>
-  
-  <header>
-    <h1>LimePea Bot</h1>
-    <nav>
-      <a href="index.html">🏠 Home</a>
-      <a href="help.html">📖 Help</a>
-      <a href="download.html">⬇️ Download</a>
-      <a href="support.html">💬 Support Server</a>
-      <a href="policy.html">🔐 Policy</a>
-      <a href="contact.html">📧 Contact</a>
-      <a href="changelog.html">📌 Changelog</a>
-    </nav>
-  </header>
 
-  <main>
-  <div class="container">
-    <h1>LimePea Help Menu</h1>
-    <p class="subtitle">Here’s a full list of available commands and features you can use with the LimePea Discord bot.</p>
+<header>
+  <h1>LimePea Bot</h1>
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="help.html">📖 Help</a>
+    <a href="download.html">⬇️ Download</a>
+    <a href="support.html">💬 Support Server</a>
+    <a href="policy.html">🔐 Policy</a>
+    <a href="contact.html">📧 Contact</a>
+    <a href="changelog.html">📌 Changelog</a>
+  </nav>
+</header>
 
-    <h2>🎮 General Commands</h2>
+<main>
+  <section>
+    <h2>📖 Help & Commands</h2>
+
+    <h3>⚙️ Admin & Moderation</h3>
     <ul>
-      <li><code>/help</code> — Shows this help page.</li>
-      <li><code>/balance [user]</code> — View your or another user's lime balance.</li>
-      <li><code>/give [user] [amount]</code> — Give your limes to another user.</li>
-      <li><code>/toplimes</code> — View the top 10 lime hoarders.</li>
-      <li><code>/daily</code> — Claim your daily lime reward with streak bonus.</li>
-      <li><code>/gamble</code> — Gamble your lime savings away.</li>
+      <li><code>sync</code> — Sync slash commands.</li>
+      <li><code>warn &lt;user&gt; [reason]</code> — Warn a user.</li>
+      <li><code>kick &lt;user&gt; [reason]</code> — Kick a member.</li>
+      <li><code>ban &lt;user&gt; [reason]</code> — Ban a user.</li>
+      <li><code>unban &lt;user_id&gt;</code> — Unban someone by ID.</li>
+      <li><code>unwarn &lt;user&gt;</code> — Remove the latest warning.</li>
+      <li><code>warnings &lt;user&gt;</code> — Show all warnings for a user.</li>
+      <li><code>silence &lt;user&gt; &lt;time&gt;</code> — Timeout a member (e.g., 10m, 1h).</li>
+      <li><code>unsilence &lt;user&gt;</code> — Remove timeout from a member.</li>
+      <li><code>setwelcome &lt;#channel&gt;</code> — Set the welcome message channel.</li>
+      <li><code>setgoodbye &lt;#channel&gt;</code> — Set the goodbye message channel.</li>
+      <li><code>setautorole &lt;role&gt;</code> — Set autorole for new members.</li>
+      <li><code>autorole</code> — View the current autorole.</li>
+      <li><code>testwelcome</code> — Simulate the welcome message.</li>
+      <li><code>testgoodbye</code> — Simulate the goodbye message.</li>
+      <li><code>addreactionrole &lt;message_id&gt; &lt;emoji&gt; &lt;role&gt;</code> — Add a reaction role.</li>
+      <li><code>removereactionrole &lt;message_id&gt; &lt;emoji&gt;</code> — Remove a reaction role.</li>
+      <li><code>setlevelrole &lt;level&gt; &lt;role&gt;</code> — Assign a role when users level up.</li>
+      <li><code>removelevelrole &lt;level&gt;</code> — Remove a level-up role.</li>
+      <li><code>listlevelroles</code> — Show all level role rewards.</li>
     </ul>
 
-    <h2>🔨 Auction Commands </h2>
+    <h3>💸 Economy & Stock</h3>
     <ul>
-      <li><code>/auction_start</code> — Start an auction.</li>
-      <li><code>/auction_bid</code> — Bid on an auction.</li>
-      <li><code>/auction_end</code> — (Admin)End the current auction.</li>
-      <li><code>/auction_status</code> — Check the current auctions status.</li>
-    </ul>
-    
-    <h2>🔧 Admin & Setup</h2>
-    <ul>
-      <li><code>/reactionrole_setup</code> — Setup a reaction role on a specific message.</li>
-      <li><code>/reactionrole_remove</code> — Remove a specific reaction role.</li>
-      <li><code>/autorole_add</code> — Automatically assign roles when members join.</li>
-      <li><code>/level_toggle</code> — Enable or disable level tracking in your server.</li>
-      <li><code>/deadchatsetup</code> — Set a role and channel to ping after 4 hours of inactivity.</li>
-      <li><code>/deadchatdisable</code> — Disable dead chat pings for your server.</li>
-    </ul>
-
-    <h2>📊 Leveling & XP</h2>
-    <ul>
-      <li><code>/rank</code> — See your current level and XP progress.</li>
-      <li><code>/leaderboard</code> — Show the top XP earners in the server.</li>
-      <li><code>/set_level [user] [level]</code> — (Admin) Manually set a user's level.</li>
-      <li><code>/lock</code> — Lock the server.</li>
-      <li><code>/Unlock</code> — Unlock the server.</li>
+      <li><code>balance</code> — View your lime balance.</li>
+      <li><code>daily</code> — Collect daily lime rewards.</li>
+      <li><code>gamble &lt;amount&gt;</code> — Gamble your limes.</li>
+      <li><code>slots &lt;amount&gt;</code> — Spin the slot machine.</li>
+      <li><code>coinflip &lt;amount&gt;</code> — Flip a coin and win or lose limes.</li>
+      <li><code>job</code> — Perform a random job for limes.</li>
+      <li><code>stockmarket</code> — View all stocks and current prices.</li>
+      <li><code>buy &lt;stock&gt; &lt;amount&gt;</code> — Purchase stock shares.</li>
+      <li><code>sell &lt;stock&gt; &lt;amount&gt;</code> — Sell your shares.</li>
+      <li><code>portfolio</code> — View your current stocks.</li>
+      <li><code>stockinfo &lt;stock&gt;</code> — View specific stock details.</li>
+      <li><code>markethistory</code> — Show past stock price data.</li>
+      <li><code>toplimes</code> — Leaderboard of richest users.</li>
     </ul>
 
-    <h2>🎫 Ticket System</h2>
+    <h3>🎉 Fun & Social</h3>
     <ul>
-      <li><code>/ticket_setup</code> — Create a ticket panel.</li>
-      <li><code>/close</code> — Close the current ticket.</li>
-      <li><code>/add [user]</code> / <code>/remove [user]</code> — Manage members in tickets.</li>
-    </ul>
-    
-    <h2>⚠️ Moderation</h2>
-    <ul>
-      <li><code>/ban [user]</code> / <code>/kick [user]</code> / <code>/timeout</code> — Core moderation tools.</li>
-      <li><code>/warn [user]</code> — Issue a warning to a member.</li>
-    </ul>
-
-    <h2>⭕ Tic Tac Toe</h2>
-    <ul>
-      <li><code>/tictactoe [user]</code> — Challenge someone to a game of Tic Tac Toe.</li>
-      <li><code>/ttt_resign</code> — Resign from a current game.</li>
+      <li><code>hug &lt;@user&gt;</code> — Hug someone (prefix + slash).</li>
+      <li><code>kiss &lt;@user&gt;</code> — Kiss someone (prefix + slash).</li>
+      <li><code>slap &lt;@user&gt;</code> — Slap a user (prefix + slash).</li>
+      <li><code>bite &lt;@user&gt;</code> — Bite a user (prefix + slash).</li>
+      <li><code>poke &lt;@user&gt;</code> — Poke someone (prefix + slash).</li>
+      <li><code>cuddle &lt;@user&gt;</code> — Cuddle someone (prefix + slash).</li>
+      <li><code>wouldyourather</code> — Get a random “Would You Rather?” question.</li>
+      <li><code>8ball &lt;question&gt;</code> — Ask the Magic 8 Ball anything.</li>
+      <li><code>deep</code> — Receive a deep and philosophical quote.</li>
+      <li><code>adventure</code> — Embark on a random journey for limes.</li>
     </ul>
 
-    <h2>🧠 Games & Fun</h2>
+    <h3>👤 Profile & Display</h3>
     <ul>
-      <li><code>/fortune</code> — Receive a random fortune message. 🍀</li>
-      <li><code>/roll [sides]</code> — Roll a dice with any number of sides.</li>
-      <li><code>/limefact</code> — Get a fun lime-related fact.</li>
-      <li><code>/rate [thing]</code> — Get a random rating for anything.</li>
-      <li><code>/battle [user]</code> — Battle another user and see who wins.</li>
-      <li><code>/8ball [question]</code> — Ask a yes/no question and get a mystical response.</li>
+      <li><code>profile [&lt;@user&gt;]</code> — Show a profile card.</li>
+      <li><code>setdisplayname &lt;name&gt;</code> — Set your display name on the leaderboard.</li>
+      <li><code>resetdisplayname</code> — Reset your display name to default.</li>
+      <li><code>backgroundstore</code> — Browse available profile backgrounds.</li>
+      <li><code>setbackground &lt;background&gt;</code> — Set one of your owned backgrounds.</li>
+      <li><code>listbadges</code> — Show badges you’ve earned.</li>
+      <li><code>listbackgrounds</code> — List owned backgrounds.</li>
     </ul>
 
-    <h2>🫂 Actions</h2>
+    <h3>📬 Tickets</h3>
     <ul>
-      <li><code>/hug</code> — Hug a friend.</li>
-      <li><code>/pat</code> — Pat someone.</li>
-      <li><code>/slap</code> — Slap someone.</li>
-      <li><code>/kiss</code> — Kiss the homie.</li>
-      <li><code>/poke</code> — Poke poke... Hey you've poked someone.</li>
-      <li><code>/cuddle</code> — Cuddle buddies!</li>
+      <li><code>ticketpanel</code> — Post the ticket creation panel.</li>
+      <li><code>closeticket</code> — Close your open ticket.</li>
+      <li><code>setticket &lt;category_id&gt;</code> — Configure ticket system.</li>
     </ul>
 
-    <h2>🎉 Polls & Giveaways</h2>
+    <h3>🔧 Utility</h3>
     <ul>
-      <li><code>/poll</code> — Create a reaction-based poll with up to 10 options.</li>
-      <li><code>/giveaway</code> — Start a giveaway with a time limit and prize.</li>
-      <li><code>/reroll</code> — Reroll a finished giveaway to pick a new winner.</li>
+      <li><code>snipe</code> — Show the last deleted message.</li>
+      <li><code>deadchat</code> — Revive chat with a prompt or quote.</li>
+      <li><code>ping</code> — Check the bot's latency.</li>
+      <li><code>/embed</code> — Create an embed.</li>
+      <li><code>/help</code> — Gives a link to the website.</li>
     </ul>
 
-    <h2>🖼️ Profile & Customization</h2>
-<ul>
-  <li><code>/profile [user]</code> — View a custom profile card image for yourself or another user.</li>
-  <li><code>/setbackground [name]</code> — Equip a profile background (must be owned).</li>
-  <li><code>/setdisplayname [name]</code> — Set a custom display name for your profile card.</li>
-  <li><code>/setbadge [badge]</code> — Equip a badge to show on your profile (must be owned).</li>
-  <li><code>/profile_shop</code> — Browse available profile backgrounds to buy with Limes.</li>
-  <li><code>/profile_inventory</code> — View your owned backgrounds and badges.</li>
-</ul>
+  </section>
+</main>
 
-  
-    <h2>📈 Stock Market</h2>
-    <ul>
-      <li><code>/stock</code> — View the current Lime stock price and 7-day trend.</li>
-      <li><code>/buystock [amount]</code> — Buy shares of Lime stock.</li>
-      <li><code>/sellstock [amount]</code> — Sell your shares for the current price.</li>
-      <li><code>/portfolio</code> — View your current stock ownership and value.</li>
-      <li><code>/stockprice</code> — Check the price of a stock.</li>
-      <li><code>/market_history</code> — See the price history of a stock.</li>
-    </ul>
+<footer>
+  &copy; 2025 LimePea Bot. All rights reserved.
+</footer>
 
-  </div>
-  </main>
-  <footer>
-    LimePea Discord Bot • Built with 💚 • © 2025 LimePea Dev Team
-  </footer>
 </body>
 </html>
